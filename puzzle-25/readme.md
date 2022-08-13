@@ -1,0 +1,1 @@
+https://www.hackthegalaxy.dev/terms-and-conditions/
