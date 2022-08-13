@@ -108,13 +108,14 @@ const solve = (originalString) => {
 
 
 
-// var wordbank = words.getMostPopular(2000);
+var wordbank = words.getMostPopular(2000);
 
-var text = fs.readFileSync("./words.txt");
-var textByLine = text.toString().split("\n")
+//OTHER WORDBANK
+// var text = fs.readFileSync("./words.txt");
+// var wordbank = text.toString().split("\n")
 
 const wordMap = new Map();
-for(let word of textByLine) {
+for(let word of wordbank) {
     wordMap.set(word, true);
 }
 
