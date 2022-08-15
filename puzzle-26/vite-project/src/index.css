@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+#root {
+  padding:0;
+  margin:0;
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-bottom: 0em;
+  font-size:6em;
+  color: #80f98e;
+  text-shadow: 0 0 8px #5e41ff;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+body {
+  background: rgb(36, 36, 36);
+}
+
+.App {
+  display:flex;
+  width:100vw;
+  height:100vh;
+  justify-content:center;
+  align-items: center;
+}
+
+.App>.left{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+
+.App>.right{
+  margin:2em;
+}
+
+.App table { 
+  table-layout:fixed;
+  border-spacing: 0;
+}
+
+.App td{ 
+  height:3rem;
+  width:3rem;
+  border: 1px solid #80f98e;
+}
+
+td.value {
+  background:rgb(255, 69, 152);  
+  color:black;
+  font-weight:900;
+  font-size:2rem;
+}
+
+
+
+td .label {
+  position:relative;
+  color: #80f98e;
+  font-weight:bold;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top right,
+    rgb(36, 36, 36) 49%,
+    #80f98e,
+    rgb(36, 36, 36) 51%
+  );
+}
+
+td .label .down {
+  position:absolute;
+  bottom:0;
+  right: 50%;
+}
+
+td .label .right {
+  position:absolute;
+  right:0;
+  bottom:50%;
+}
+
+td.value {
+  cursor:pointer;
+}
+
+td.value:hover{
+  background:pink;
+}
+
+td.value.selected {
+  background:pink;
+}
+
+.cell-details{
+  font-size:2em;
+  font-weight:bold;
+}
+
+.cell-details span {
+  color:black;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:3em;
+  height:3em;
+  border:1px solid;
+  cursor:pointer;
+}
+
+.cell-details span.included {
+  background:#80f98e;
+}
+
+h1{
+  color:#80f98e;
+}
+
+h2{
+  text-align:left;
+  color:#80f98e;
+}
